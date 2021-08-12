@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1618755794 source:c:\users\trist\onedrive\documents\ece\cours\informatique\programmes\210418_tp_enquete_petit_querton\ss_pg_chap1.c
+	"header.h"
+
+1618780182 c:\users\trist\onedrive\documents\ece\cours\informatique\programmes\210418_tp_enquete_petit_querton\header.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<windows.h>
+
+1618779137 source:c:\users\trist\onedrive\documents\ece\cours\informatique\programmes\210418_tp_enquete_petit_querton\ss_pg_chap1_bonus.c
+	"header.h"
+
+1618754763 source:c:\users\trist\onedrive\documents\ece\cours\informatique\programmes\210418_tp_enquete_petit_querton\ss_pg_chap2.c
+	"header.h"
+
+1618754557 source:c:\users\trist\onedrive\documents\ece\cours\informatique\programmes\210418_tp_enquete_petit_querton\ss_pg_chap3.c
+	"header.h"
+
+1618779804 source:c:\users\trist\onedrive\documents\ece\cours\informatique\programmes\210418_tp_enquete_petit_querton\ss_pg_menu.c
+	"header.h"
+
+1618779267 source:c:\users\trist\onedrive\documents\ece\cours\informatique\programmes\210418_tp_enquete_petit_querton\main.c
+	"header.h"
+
