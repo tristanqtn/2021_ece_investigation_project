@@ -1,58 +1,46 @@
-Half second semester project, resolve and investigation in C. It's a shell programm. The goal is to identify a murderer with just list of phone calls extract from the victim's phone. The goal of this mini project is to work on sorts and optimization of the program. We therefore work on the complexities, the processing times and the most optimized ways to process the data.
+# Half Second Semester Project in C
 
-I'm using in this project :
+This project, undertaken during the second half of the semester, involves resolving and investigating a C-based shell program. The primary objective is to identify a murderer using only a list of phone calls extracted from the victim's phone. The focus of this mini project lies in working on sorting algorithms and program optimization. Emphasis is placed on addressing complexities, processing times, and finding the most optimized ways to handle the data.
 
- - structures
- - files
- - list
- - recursivity
- - pointers
+## Technologies Used
 
+- Structures
+- Files
+- Lists
+- Recursivity
+- Pointers
 
+## Authors
 
+Code written by Apolline Petit and Tristan Querton for the "Etude de Cas" course under the guidance of Professor M. Segado. The completion date is 18/04/2021.
 
-/**
- * CODE REDIGE PAR APOLLINE PETIT ET TRISTAN QUERTON
- * COURS : ETUDE DE CAS
- * PROFESSEUR : M SEGADO
- * DATE : 18/04/2021
- */
+## Approach and Hypotheses
 
+### Chapter I
 
-/** HYPOTHESES et démarche informatique pour aborder le sujet
- *
- * Pour le chapitre I nous utilisons un tableau de 1000 structures d'appels car nous connaissons le nombre d'appels à stocker
- *              -> nous utilisons une structure pour stocker indépendamment tout les éléments d'un appel (contact, numéro, type d'appel, ...)
- *              -> cette structure sera ensuite réutilisée dans une autre sutructure dans le CHAP II pour former une liste chainée
- *
- * Pour le chapitre II nous créons une liste chainée, elle nous permet de parcourir qu'une seule fois le releve d'appels et de créer un maillon pour chaque contact
- *              -> la création de cette liste est à partir d'une liste d'appels non triée et directement lue dans le fichier "releve.txt"
- *
- * Pour le capitre III nous utilisons une génération aléatoire d'entiers entre 0 et 24 bornes comprises (donc 25 valeurs possibles, autant que de suspects)
- *              -> D'abord, nous appliquons la même méthode que pour lh'histogramme des appels
- *              -> Ensuite, nous essayons d'optimiser les traitements d'histogramme en utilisant une unique boucle for().
- *                  -> en conclusion nous ne pouvons pas appliquer cette optimisation à nos traitements de structures
- *
- *
- * ATTENTION  : les tris proposés sont rapides car le nombre de données à traiter est petit.
- *              -> il est donc possible que le temps de tri affiché soit 0.0000s ou 0.0000002s ou encore des valeurs négatives lié à une erreur de calcul de la période
- *                  -> pour palier cela il suffit de relancer le programme de tri une nouvelle fois
- *                      -> ce sont des erreurs liées à de multiples compilations et éxécution en série du programme sur le même processeur
- *
-*/
+For Chapter I, a table of 1000 call structures is used since the number of calls to store is known in advance. Each call's elements (contact, number, call type, etc.) are stored independently in a structure. This structure is then reused in another structure in Chapter II to form a linked list.
 
+### Chapter II
 
+In Chapter II, a linked list is created to traverse the call log only once and create a node for each contact. This list is created from an unsorted list of calls directly read from the "releve.txt" file.
 
-/** Sources 
- * https://github.com/
- * https://www.cplusplus.com/
- * https://www.101computing.net/bubble-sort-vs-insertion-sort/
- * https://waytolearnx.com/2019/08/tri-a-bulle-en-c.html
- * https://waytolearnx.com/2019/08/tri-par-insertion-en-c.html
- * https://waytolearnx.com/2019/08/tri-par-selection-en-c.html
- * https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c
- * https://c.developpez.com/faq/?page=Gestion-des-dates-et-heures#Comment-chronometrer-des-temps-d-execution
- * 
- * Tout les algorythmes sont issues d'algorythmes libres de droits disponibles sur les sites ci-joint.
- * 
-*/
+### Chapter III
+
+In Chapter III, a random generation of integers between 0 and 24 inclusive is used (25 possible values, corresponding to the number of suspects). Initially, the same method as for the call histogram is applied. Then, attempts are made to optimize histogram processing using a single for() loop. However, this optimization cannot be applied to structure processing.
+
+## Attention
+
+The provided sorting algorithms are fast, given the small amount of data to process. Consequently, the displayed sorting time may be 0.0000s, 0.0000002s, or even negative values due to a period calculation error. To address this, simply rerun the sorting program.
+
+## Sources
+
+- [GitHub](https://github.com/)
+- [cplusplus.com](https://www.cplusplus.com/)
+- [101computing](https://www.101computing.net/bubble-sort-vs-insertion-sort/)
+- [waytolearnx](https://waytolearnx.com/2019/08/tri-a-bulle-en-c.html)
+- [waytolearnx](https://waytolearnx.com/2019/08/tri-par-insertion-en-c.html)
+- [waytolearnx](https://waytolearnx.com/2019/08/tri-par-selection-en-c.html)
+- [OpenClassrooms](https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c)
+- [Developpez.com](https://c.developpez.com/faq/?page=Gestion-des-dates-et-heures#Comment-chronometrer-des-temps-d-execution)
+
+All algorithms used are free of rights and available on the mentioned websites.
